@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html{
+:root{
     font-size: 62.5%;
     background-color: #F8F9F5;
 }
@@ -13,16 +13,82 @@ body{
     width: 100%;
 }
 
-nav, ul{
+ul{
     display: flex;
     /* flex-direction: row; */
+    justify-content: space-between;
+    /* border: 2px red solid; */
+    background-color: #FEFEFAE5;
+    padding: 1rem 1rem;
+    width: 90%;
+    margin: 0px auto;
+    /* margin: 3rem 2rem; */
+    opacity: 100%;
 }
-
+nav{
+    /* border: 2px brown solid; */
+    background-image: url("/assets/image-one.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: .25rem .35rem .25rem .35rem;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
 a{
     text-decoration: none;
-    padding: 2rem
+    vertical-align: center;
+    font-family: "Inter", serif;
+    font-size: 1.5rem;
+}
+ul > .links{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+ul > .links > li{
+    /* border: 2px black solid; */
+    align-items: center;
+    width: 100%;
+}
+ul > li{
+    list-style-type: none;
+    align-items: center;   
+}
+li > a{
+    margin-right: 1rem;
+    align-items: center;
 }
 
-li{
-    text-decoration: none;
+nav > #Logo{
+    /* padding: 2rem 2rem;
+    margin: 3rem 2rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > #Logo > .group-logo{
+    display: flex;
+    margin: 2rem 2rem;
+    align-items: center;
+}
+nav > #Logo > .group-logo > h2{
+    font-family: "Pacifico", serif;
+    font-size: 3.7rem;
+}
+
+#Logo > .paragraph{
+    font-family: "Handlee", serif;
+    margin: 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#Logo > .paragraph > p{
+    font-family: "Handlee", serif;
+    font-size: 1.6rem;
+    align-items: center;
 }

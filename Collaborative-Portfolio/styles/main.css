@@ -1,421 +1,432 @@
-*, *::before, *::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    font-size: 62.5%;
-    background-color: #F8F9F5;
+:root {
+  font-size: 62.5%;
+  background-color: #f8f9f5;
 }
 
-body{
-    width: 100%;
+body {
+  width: 100%;
 }
 
-.info{
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    /* border: 2px red solid; */
-    border-radius: 2rem;
-    background-color: #FEFEFAE5;
-    padding: 1rem 1rem;
-    width: 90%;
-    margin: 2rem auto;
-    /* margin: 3rem 2rem; */
-    opacity: 100%;
+.info {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  /* border: 2px red solid; */
+  border-radius: 2rem;
+  background-color: #fefefae5;
+  padding: 1rem 1rem;
+  width: 90%;
+  margin: 2rem auto;
+  /* margin: 3rem 2rem; */
+  opacity: 100%;
 }
-nav{
-    position: relative;
-    border: .1px white solid;
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("/assets/image-one.jpg");
-    /* background-image: url("/assets/image-one.jpg"); */
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    height: 300px;
-    border-radius: .5rem;
+nav {
+  position: relative;
+  border: 0.1px white solid;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../assets/image-one.jpg");
+  /* background-image: url("/assets/image-one.jpg"); */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  height: 300px;
+  border-radius: 0.5rem;
 }
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
-.falcons{
-    display: flex;
-    justify-content: center;
+.falcons {
+  display: flex;
+  justify-content: center;
 }
-a{
-    text-decoration: none;
-    vertical-align: center;
-    font-family: "Inter", serif;
-    font-size: 1.5rem;
+a {
+  text-decoration: none;
+  vertical-align: center;
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
 }
-.info > .links{
-    width: 30%;
-    display: flex;
-    justify-content: center;
+.info > .links {
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
-.info > .links > .falcons{
-    /* border: 2px black solid; */
-    align-items: center;
-    width: 100%;
+.info > .links > .falcons {
+  /* border: 2px black solid; */
+  align-items: center;
+  width: 100%;
 }
-.info > li{
-    list-style-type: none;
-    align-items: center;   
+.info > li {
+  list-style-type: none;
+  align-items: center;
 }
-.falcons > a{
-    margin-right: 1rem;
-    align-items: center;
+.falcons > a {
+  margin-right: 1rem;
+  align-items: center;
 }
 
-nav > #Logo{
-    /* padding: 2rem 2rem;
+nav > #Logo {
+  /* padding: 2rem 2rem;
     margin: 3rem 2rem; */
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
 }
 
-nav > #Logo > .group-logo{
-    display: flex;
-    margin: 2rem 2rem;
-    align-items: center;
+nav > #Logo > .group-logo {
+  display: flex;
+  margin: 2rem 2rem;
+  align-items: center;
 }
 
-nav > #Logo > .group-logo > h2{
-    font-family: "Pacifico", serif;
-    font-size: 3.7rem;
+nav > #Logo > .group-logo > h2 {
+  font-family: "Pacifico", serif;
+  font-size: 3.7rem;
 }
 
-#Logo > .paragraph{
-    font-family: "Handlee", serif;
-    margin: 2rem 2rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+#Logo > .paragraph {
+  font-family: "Handlee", serif;
+  margin: 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-#Logo > .paragraph > p{
-    font-family: "Handlee", serif;
-    font-size: 1.6rem;
-    align-items: center;
-}
-
-.links > li > .home{
-    color: #F62E5A;
+#Logo > .paragraph > p {
+  font-family: "Handlee", serif;
+  font-size: 1.6rem;
+  align-items: center;
 }
 
-.links > li > .contact{
-    border: .1rem solid black;
-    background-color: #CAF0F8;
-    padding: 1rem
+.links > li > .home {
+  color: #f62e5a;
 }
 
-header > #Intro{
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    margin: 2rem auto;
-    padding: 2rem;
+.links > li > .contact {
+  border: 0.1rem solid black;
+  background-color: #caf0f8;
+  padding: 1rem;
 }
 
-header > #Intro > .connection{
-    display: flex;
-    justify-content: space-evenly;
-    width: 40%;
-    margin: .15rem auto;
-    padding: 2rem;
+header > #Intro {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 2rem auto;
+  padding: 2rem;
 }
 
-header > #Intro > .connection > p{
-    border: 3px solid black;
-    width: 100%;
-    text-align: center;
-    margin-right: 1rem;
-    padding: 1rem;
-    font-family: "Inter", serif;
-    font-size: 1.5rem;
-    border-radius: 1.5rem;
+header > #Intro > .connection {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 0.15rem auto;
+  padding: 2rem;
 }
 
-header > #Intro > .connection > .connect{
-    background-color: #CAF0F8;
+header > #Intro > .connection > p {
+  border: 3px solid black;
+  width: 100%;
+  text-align: center;
+  margin-right: 1rem;
+  padding: 1rem;
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
 }
 
-header > #Intro > .connection > .vision{
-    background-color: #ffffff;
+header > #Intro > .connection > .connect {
+  background-color: #caf0f8;
 }
 
-header > #Intro > p{
-    font-family:  "Inter", serif;
-    width: 100%;
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
+header > #Intro > .connection > .vision {
+  background-color: #ffffff;
 }
 
-#main{
-    padding: 1rem;
+header > #Intro > p {
+  font-family: "Inter", serif;
+  width: 100%;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
-#main > #About{
-    background: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url("/assets/image-two.jpg");
-    padding: 2.5rem;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
+#main {
+  padding: 1rem;
 }
 
-#main > #About > h3{
-    color: white;
-    font-family: "Handlee", serif;
-    width: 90%;
-    margin: .5rem auto;
-    padding: 1.2rem;
-    font-size: 2.7rem;
+#main > #About {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../assets/image-two.jpg");
+  padding: 2.5rem;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
 }
 
-#main > #About > p{
-    color: white;
-    font-family: "Inter", serif;
-    width: 90%;
-    margin: .45rem auto;
-    padding: 1.2rem;
-    font-size: 1.5rem;
-    line-height: 24.2px;
+#main > #About > h3 {
+  color: white;
+  font-family: "Handlee", serif;
+  width: 90%;
+  margin: 0.5rem auto;
+  padding: 1.2rem;
+  font-size: 2.7rem;
 }
 
-#main > #Portfolio{
-    display: flex;
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2.5rem;
-    justify-content: space-between;
+#main > #About > p {
+  color: white;
+  font-family: "Inter", serif;
+  width: 90%;
+  margin: 0.45rem auto;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 24.2px;
 }
 
-#main > #Portfolio > .portfolio{
-    width: 40%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+#main > #Portfolio {
+  display: flex;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  justify-content: space-between;
 }
 
-#main > #Portfolio > .portfolio > h3{
-    font-family: "Handlee", serif;
-    font-size: 2.7rem;
+#main > #Portfolio > .portfolio {
+  width: 40%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-#main > #Portfolio > .portfolio > p{
-    font-family: "Inter", serif;
-    font-size: 1.5rem;
+#main > #Portfolio > .portfolio > h3 {
+  font-family: "Handlee", serif;
+  font-size: 2.7rem;
 }
 
-#main > #Portfolio > .progress{
-    width: 45%;
-    display: flex;
-}
-#main > #Portfolio > .progress > img{
-    width: 100%;
+#main > #Portfolio > .portfolio > p {
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
 }
 
-#Toolkit{
-    width: 100%;
-    padding: 2.5rem;
+#main > #Portfolio > .progress {
+  width: 45%;
+  display: flex;
+}
+#main > #Portfolio > .progress > img {
+  width: 100%;
 }
 
-#Toolkit > .tool-paragraph{
-    border: 1px solid #CAF0F8;
-    padding: 2.5rem;
-    width: 100%;
-    margin: 1.5rem auto;
-    background-color: #EDF2F4;
+#Toolkit {
+  width: 100%;
+  padding: 2.5rem;
 }
 
-#Toolkit > .tool-paragraph > .tool-paragraph-1{
-    width: 95%;
-    margin: 0 auto;
+#Toolkit > .tool-paragraph {
+  border: 1px solid #caf0f8;
+  padding: 2.5rem;
+  width: 100%;
+  margin: 1.5rem auto;
+  background-color: #edf2f4;
 }
 
-
-#Toolkit > .tool-paragraph > .tool-paragraph-1 > h3{
-    font-family: "Handlee", serif;
-    font-size: 2.7rem;
-    margin-bottom: 1.3rem;
+#Toolkit > .tool-paragraph > .tool-paragraph-1 {
+  width: 95%;
+  margin: 0 auto;
 }
 
-#Toolkit > .tool-paragraph > .tool-paragraph-1 > p{
-    font-family: "Inter", serif;
-    font-size: 1.5rem; 
+#Toolkit > .tool-paragraph > .tool-paragraph-1 > h3 {
+  font-family: "Handlee", serif;
+  font-size: 2.7rem;
+  margin-bottom: 1.3rem;
 }
 
-#Toolkit > .tool{
-    padding: 2rem 0;
-    width: 80%;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
+#Toolkit > .tool-paragraph > .tool-paragraph-1 > p {
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
 }
 
-#Toolkit > .tool > .devops{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem 0 0 1.5rem;
-    justify-content: space-evenly;
+#Toolkit > .tool {
+  padding: 2rem 0;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-#Toolkit > .tool > .devops > p{
-    padding: 1.5rem;
-    border: 1px solid black;
-    background-color: #EDF2F4;
-    border-radius: 1.5rem;
-    text-align: center;
-    font-family: "Inter", serif;
+#Toolkit > .tool > .devops {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0 0 1.5rem;
+  justify-content: space-evenly;
 }
 
-#Toolkit > .tool > .img-code{
-   width: 50%;
+#Toolkit > .tool > .devops > p {
+  padding: 1.5rem;
+  border: 1px solid black;
+  background-color: #edf2f4;
+  border-radius: 1.5rem;
+  text-align: center;
+  font-family: "Inter", serif;
 }
 
-#Toolkit > .tool > .img-code > img{
-   width: 100%;
-   height: 300px;
+#Toolkit > .tool > .img-code {
+  width: 50%;
 }
 
-#Team{
-    width: 100%;
-    padding: 2.5rem;
+#Toolkit > .tool > .img-code > img {
+  width: 100%;
+  height: 300px;
 }
 
-#Team > .team{
-    width: 95%;
-    margin: 0 auto;
+#Team {
+  width: 100%;
+  padding: 2.5rem;
 }
 
-#Team > .team > h3{
-    font-size: 2.7rem;
-    font-family: "Handlee", serif;
-    padding-left: 1rem;
-    padding-top: 1rem;
+#Team > .team {
+  width: 95%;
+  margin: 0 auto;
 }
 
-#Team > .team > .members{
-    display: flex;
-    width: 100%;
+#Team > .team > h3 {
+  font-size: 2.7rem;
+  font-family: "Handlee", serif;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
-#Team > .team > .members > .josh, .zee, .john, .kemi{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25%;
-    padding: 1.2rem;
-    text-align: center;
+#Team > .team > .members {
+  display: flex;
+  width: 100%;
 }
 
-#Team > .team > .members > .john > img{
-    width: 100%;
-}
-#Team > .team > .members > .josh > img{
-    width: 100%;
-}
-#Team > .team > .members > .kemi > img{
-    width: 100%;
-}
-#Team > .team > .members > .zee > img{
-    width: 100%;
-}
-
-#Team > .team > .members > .john > p{
-    padding-top: 1.3rem;
-}
-#Team > .team > .members > .josh > p{
-    padding-top: 1.3rem;
-}
-#Team > .team > .members > .kemi > p{
-    padding-top: 1.3rem;
-}
-#Team > .team > .members > .zee > p{
-    padding-top: 1.3rem;
+#Team > .team > .members > .josh,
+.zee,
+.john,
+.kemi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  padding: 1.2rem;
+  text-align: center;
 }
 
-
-#Footer{
-    width: 100%;
+#Team > .team > .members > .john > img {
+  width: 100%;
+}
+#Team > .team > .members > .josh > img {
+  width: 100%;
+}
+#Team > .team > .members > .kemi > img {
+  width: 100%;
+}
+#Team > .team > .members > .zee > img {
+  width: 100%;
 }
 
-#Footer > .contact{
-    display: flex;
-    width: 90%;
-    margin: 1.5rem auto;
+#Team > .team > .members > .john > p {
+  padding-top: 1.3rem;
+}
+#Team > .team > .members > .josh > p {
+  padding-top: 1.3rem;
+}
+#Team > .team > .members > .kemi > p {
+  padding-top: 1.3rem;
+}
+#Team > .team > .members > .zee > p {
+  padding-top: 1.3rem;
 }
 
-#Footer > .contact > .contact-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#Footer {
+  width: 100%;
 }
 
-#Footer > .contact > .contact-1 > h3{
-    font-size: 2.7rem;
-    font-family: "Handlee", serif;
-    padding-left: 1rem;
-    padding-top: 1rem;
+#Footer > .contact {
+  display: flex;
+  width: 90%;
+  margin: 1.5rem auto;
 }
 
-#Footer > .contact > .contact-1 > .in-touch{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#Footer > .contact > .contact-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#Footer > .contact > .contact-1 > .in-touch > p{
-    font-family: "Inter", serif;
-    font-size: 1.5rem; 
-    padding-left: 1rem;
-    padding-top: 1rem;
+#Footer > .contact > .contact-1 > h3 {
+  font-size: 2.7rem;
+  font-family: "Handlee", serif;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
-#Footer > .contact > .contact-1 > .in-touch > .contact-links{
-    display: flex;
-    flex-direction: column;
+#Footer > .contact > .contact-1 > .in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contact-links > .icon{
-    display: flex;
-    font-family: "Inter", serif;
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
-}
-.contact-links > .icon > i{
-    font-size: 1.5rem;
-    padding-right: 1rem;
+#Footer > .contact > .contact-1 > .in-touch > p {
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
-#Footer > .contact > .Links{
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
-}
-#Footer > .contact > .Links > .quick-links{
-    font-size: 1.2rem;
-    font-family: "Inter", serif;
-    padding-left: 1rem;
-    padding-top: 1.2rem;
-    width: 35%;
+#Footer > .contact > .contact-1 > .in-touch > .contact-links {
+  display: flex;
+  flex-direction: column;
 }
 
-#Footer > .contact > .Links > .links{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 1rem;
+.contact-links > .icon {
+  display: flex;
+  font-family: "Inter", serif;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.contact-links > .icon > i {
+  font-size: 1.5rem;
+  padding-right: 1rem;
 }
 
-#Footer > .copy{
-    text-align: center;
-    padding: 1rem;
-    font-family: "Inter", serif;
-    font-size: 1.3rem;
+#Footer > .contact > .Links {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+#Footer > .contact > .Links > .quick-links {
+  font-size: 1.2rem;
+  font-family: "Inter", serif;
+  padding-left: 1rem;
+  padding-top: 1.2rem;
+  width: 35%;
+}
+
+#Footer > .contact > .Links > .links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+#Footer > .copy {
+  text-align: center;
+  padding: 1rem;
+  font-family: "Inter", serif;
+  font-size: 1.3rem;
 }
